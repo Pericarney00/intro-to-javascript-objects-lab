@@ -48,3 +48,19 @@ Solve Exercise 4 here:
 console.log(pokemon[3])
 game.party.push(pokemon[3])
 console.log(game.party)
+
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+game.party.push(pokemon[112])
+game.party.push(pokemon[111])
+game.party.push(pokemon[149])
+ console.log(game.party)
+
+ 
