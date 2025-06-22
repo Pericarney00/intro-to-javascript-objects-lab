@@ -58,9 +58,25 @@ Exercise 5
 Solve Exercise 5 here:
 */
 
+// I chose these 3 pokemon because of their health and type attributes
+
 game.party.push(pokemon[112])
 game.party.push(pokemon[111])
 game.party.push(pokemon[149])
  console.log(game.party)
 
- 
+/*
+Exercise 6
+1. Set the `completed` property to true for gyms with a difficulty below 3.
+2. Think about how you'd loop through the `gyms` array to check and update the `completed` property.
+
+
+Solve Exercise 6 here:
+*/
+
+game.gyms.forEach(gyms =>{
+  if (gyms.difficulty < 3 && gyms.completed === false ){
+    console.log(!false)
+  } 
+})
+  
