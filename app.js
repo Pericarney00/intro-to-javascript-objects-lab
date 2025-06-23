@@ -98,13 +98,9 @@ Solve Exercise 7 here:
 */
 console.log(game.party)
 
- const starterEvolution = pokemon.slice( 4, 5)
+ const starterEvolution = game.party.splice( 0,1,pokemon[4])
 
  console.log(starterEvolution)
-
-game.party.shift(0)
-
- game.party.unshift(starterEvolution)
 
 console.log(game.party)
 
@@ -135,3 +131,22 @@ pokemon.forEach(pokemon => {
   console.log(pokemon.name)}
 })
 
+/*
+Exercise 10
+Create a method called `catchPokemon` and add it to the `game` object. You should not need to edit the original game object directly. This method should:
+  - Accept an object as a parameter called `pokemonObj`
+  - Add the `pokemonObj` to the `game.party` array.
+  - not return anything
+
+After writing this method, call it and pass in a Pokemon object of your choice from the `pokemon` data to catch it.
+
+Solve Exercise 10 here:
+*/
+
+let pokemonObj 
+game.catchPokemon = function (pokemonObj){
+  game.party.push(pokemonObj)
+}
+game.catchPokemon(pokemon[0])
+
+console.log(game.party)
