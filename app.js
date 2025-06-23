@@ -101,7 +101,37 @@ console.log(game.party)
  const starterEvolution = pokemon.slice( 4, 5)
 
  console.log(starterEvolution)
-game.party.splice(0,1, starterEvolution)
+
+game.party.shift(0)
+
+ game.party.unshift(starterEvolution)
 
 console.log(game.party)
+
+/*
+Exercise 8
+1. Print the name of each Pokémon in your party.
+2. Consider using a loop or an array method to access each Pokémon's name.
+
+Solve Exercise 8 here:
+*/
+
+
+game.party.forEach(game => { 
+  console.log(game.name)
+})
+
+/*
+Exercise 9
+1. Can you print out all the starter Pokémon from the `pokemon` array?
+2. Think about how you can identify a starter Pokémon and then log their names.
+
+
+Solve Exercise 9 here:
+*/
+ 
+pokemon.forEach(pokemon => { 
+  if (pokemon.starter === true){
+  console.log(pokemon.name)}
+})
 
